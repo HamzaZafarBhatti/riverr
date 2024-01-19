@@ -61,7 +61,7 @@
 						<div class="relative w-full shadow-sm rounded-md">
 
 							{{-- Input --}}
-							<input type="email" x-model="form.email" class="{{ $errors->first('email') ? 'focus:ring-red-600 focus:border-red-600 border-red-500' : 'focus:ring-primary-600 focus:border-primary-600 border-gray-300' }} border text-gray-900 text-sm rounded-md font-medium block w-full ltr:pr-12 rtl:pl-12 p-4 placeholder:font-normal dark:bg-zinc-700 dark:border-zinc-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="{{ __('messages.t_enter_email_address') }}">
+							<input type="email" x-model="form.email" class="{{ $errors->first('email') ? 'focus:ring-red-600 focus:border-red-600 border-red-500' : 'focus:ring-green-600 focus:border-green-600 border-gray-300' }} border text-gray-900 text-sm rounded-md font-medium block w-full ltr:pr-12 rtl:pl-12 p-4 placeholder:font-normal dark:bg-zinc-700 dark:border-zinc-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="{{ __('messages.t_enter_email_address') }}">
 
 							{{-- Icon --}}
 							<div class="absolute inset-y-0 ltr:right-0 rtl:left-0 flex items-center ltr:pr-3 rtl:pl-3">
@@ -84,7 +84,7 @@
 						<div class="relative w-full shadow-sm rounded-md">
 
 							{{-- Input --}}
-							<input type="password" x-model="form.password" class="{{ $errors->first('password') ? 'focus:ring-red-600 focus:border-red-600 border-red-500' : 'focus:ring-primary-600 focus:border-primary-600 border-gray-300' }} border text-gray-900 text-sm rounded-md font-medium block w-full ltr:pr-12 rtl:pl-12 p-4 placeholder:font-normal  dark:bg-zinc-700 dark:border-zinc-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="{{ __('messages.t_enter_password') }}">
+							<input type="password" x-model="form.password" class="{{ $errors->first('password') ? 'focus:ring-red-600 focus:border-red-600 border-red-500' : 'focus:ring-green-600 focus:border-green-600 border-gray-300' }} border text-gray-900 text-sm rounded-md font-medium block w-full ltr:pr-12 rtl:pl-12 p-4 placeholder:font-normal  dark:bg-zinc-700 dark:border-zinc-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="{{ __('messages.t_enter_password') }}">
 
 							{{-- Icon --}}
 							<div class="absolute inset-y-0 ltr:right-0 rtl:left-0 flex items-center ltr:pr-3 rtl:pl-3">
@@ -106,7 +106,7 @@
 					<div class="col-span-12 flex items-center">
 						<div class="relative flex items-start">
 							<div class="flex items-center h-5">
-								<input id="remember_me" wire:model.defer="remember_me" type="checkbox" class="focus:ring-primary-600 h-5 w-5 text-primary-600 border-2 dark:bg-zinc-700 border-gray-200 dark:border-zinc-700 rounded-sm cursor-pointer">
+								<input id="remember_me" wire:model.defer="remember_me" type="checkbox" class="focus:ring-green-600 h-5 w-5 text-green-600 border-2 dark:bg-zinc-700 border-gray-200 dark:border-zinc-700 rounded-sm cursor-pointer">
 							</div>
 							<div class="ltr:ml-3 rtl:mr-3 text-[13px]">
 								<label for="remember_me" class="font-normal text-zinc-600 dark:text-gray-400 cursor-pointer">{{ __('messages.t_remember_me') }}</label>
@@ -123,7 +123,7 @@
 
 					{{-- Login --}}
 					<div class="col-span-12">
-						<button type="submit" wire:loading.attr="disabled" wire:target="login" :disabled="!form.email || !form.password" class="w-full bg-primary-600 enabled:hover:bg-primary-700 text-white py-4.5 px-4 rounded-md text-[13px] font-semibold tracking-wide disabled:bg-zinc-200 disabled:text-zinc-500 dark:disabled:bg-zinc-500 dark:disabled:text-zinc-300 disabled:cursor-not-allowed">
+						<button type="submit" wire:loading.attr="disabled" wire:target="login" :disabled="!form.email || !form.password" class="w-full bg-green-600 enabled:hover:bg-green-700 text-white py-4.5 px-4 rounded-md text-[13px] font-semibold tracking-wide disabled:bg-zinc-200 disabled:text-zinc-500 dark:disabled:bg-zinc-500 dark:disabled:text-zinc-300 disabled:cursor-not-allowed">
 							
 							{{-- Loading indicator --}}
 							<div wire:loading wire:target="login">

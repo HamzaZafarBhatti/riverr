@@ -45,7 +45,7 @@
 						<div class="relative w-full shadow-sm rounded-md">
 
 							{{-- Input --}}
-							<input type="text" x-model="form.fullname" class="{{ $errors->first('fullname') ? 'focus:ring-red-600 focus:border-red-600 border-red-500' : 'focus:ring-primary-600 focus:border-primary-600 border-gray-300' }} border text-gray-900 text-sm rounded-md font-medium block w-full ltr:pr-12 rtl:pl-12 p-4 placeholder:font-normal dark:bg-zinc-700 dark:border-zinc-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="{{ __('messages.t_enter_your_fullname') }}">
+							<input type="text" x-model="form.fullname" class="{{ $errors->first('fullname') ? 'focus:ring-red-600 focus:border-red-600 border-red-500' : 'focus:ring-green-600 focus:border-green-600 border-gray-300' }} border text-gray-900 text-sm rounded-md font-medium block w-full ltr:pr-12 rtl:pl-12 p-4 placeholder:font-normal dark:bg-zinc-700 dark:border-zinc-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="{{ __('messages.t_enter_your_fullname') }}">
 
 							{{-- Icon --}}
 							<div class="absolute inset-y-0 ltr:right-0 rtl:left-0 flex items-center ltr:pr-3 rtl:pl-3">
@@ -68,7 +68,7 @@
 						<div class="relative w-full shadow-sm rounded-md">
 
 							{{-- Input --}}
-							<input type="email" x-model="form.email" class="{{ $errors->first('email') ? 'focus:ring-red-600 focus:border-red-600 border-red-500' : 'focus:ring-primary-600 focus:border-primary-600 border-gray-300' }} border text-gray-900 text-sm rounded-md font-medium block w-full ltr:pr-12 rtl:pl-12 p-4 placeholder:font-normal dark:bg-zinc-700 dark:border-zinc-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="{{ __('messages.t_enter_email_address') }}">
+							<input type="email" x-model="form.email" class="{{ $errors->first('email') ? 'focus:ring-red-600 focus:border-red-600 border-red-500' : 'focus:ring-green-600 focus:border-green-600 border-gray-300' }} border text-gray-900 text-sm rounded-md font-medium block w-full ltr:pr-12 rtl:pl-12 p-4 placeholder:font-normal dark:bg-zinc-700 dark:border-zinc-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="{{ __('messages.t_enter_email_address') }}">
 
 							{{-- Icon --}}
 							<div class="absolute inset-y-0 ltr:right-0 rtl:left-0 flex items-center ltr:pr-3 rtl:pl-3">
@@ -91,7 +91,7 @@
 						<div class="relative w-full shadow-sm rounded-md">
 
 							{{-- Input --}}
-							<input type="text" x-model="form.username" class="{{ $errors->first('username') ? 'focus:ring-red-600 focus:border-red-600 border-red-500' : 'focus:ring-primary-600 focus:border-primary-600 border-gray-300' }} border text-gray-900 text-sm rounded-md font-medium block w-full ltr:pr-12 rtl:pl-12 p-4 placeholder:font-normal dark:bg-zinc-700 dark:border-zinc-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="{{ __('messages.t_enter_username') }}">
+							<input type="text" x-model="form.username" class="{{ $errors->first('username') ? 'focus:ring-red-600 focus:border-red-600 border-red-500' : 'focus:ring-green-600 focus:border-green-600 border-gray-300' }} border text-gray-900 text-sm rounded-md font-medium block w-full ltr:pr-12 rtl:pl-12 p-4 placeholder:font-normal dark:bg-zinc-700 dark:border-zinc-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="{{ __('messages.t_enter_username') }}">
 
 							{{-- Icon --}}
 							<div class="absolute inset-y-0 ltr:right-0 rtl:left-0 flex items-center ltr:pr-3 rtl:pl-3">
@@ -114,7 +114,7 @@
 						<div class="relative w-full shadow-sm rounded-md">
 
 							{{-- Input --}}
-							<input type="password" x-model="form.password" class="{{ $errors->first('password') ? 'focus:ring-red-600 focus:border-red-600 border-red-500' : 'focus:ring-primary-600 focus:border-primary-600 border-gray-300' }} border text-gray-900 text-sm rounded-md font-medium block w-full ltr:pr-12 rtl:pl-12 p-4 placeholder:font-normal  dark:bg-zinc-700 dark:border-zinc-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="{{ __('messages.t_enter_password') }}">
+							<input type="password" x-model="form.password" class="{{ $errors->first('password') ? 'focus:ring-red-600 focus:border-red-600 border-red-500' : 'focus:ring-green-600 focus:border-green-600 border-gray-300' }} border text-gray-900 text-sm rounded-md font-medium block w-full ltr:pr-12 rtl:pl-12 p-4 placeholder:font-normal  dark:bg-zinc-700 dark:border-zinc-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="{{ __('messages.t_enter_password') }}">
 
 							{{-- Icon --}}
 							<div class="absolute inset-y-0 ltr:right-0 rtl:left-0 flex items-center ltr:pr-3 rtl:pl-3">
@@ -149,7 +149,7 @@
 
 					{{-- Register --}}
 					<div class="col-span-12">
-						<button type="submit" wire:loading.attr="disabled" wire:target="register" :disabled="!form.email || !form.password || !form.fullname || !form.username" class="w-full bg-primary-600 enabled:hover:bg-primary-700 text-white py-4.5 px-4 rounded-md text-[13px] font-semibold tracking-wide disabled:bg-zinc-200 disabled:text-zinc-500 dark:disabled:bg-zinc-500 dark:disabled:text-zinc-300 disabled:cursor-not-allowed">
+						<button type="submit" wire:loading.attr="disabled" wire:target="register" :disabled="!form.email || !form.password || !form.fullname || !form.username" class="w-full bg-green-600 enabled:hover:bg-green-700 text-white py-4.5 px-4 rounded-md text-[13px] font-semibold tracking-wide disabled:bg-zinc-200 disabled:text-zinc-500 dark:disabled:bg-zinc-500 dark:disabled:text-zinc-300 disabled:cursor-not-allowed">
 							
 							{{-- Loading indicator --}}
 							<div wire:loading wire:target="register">

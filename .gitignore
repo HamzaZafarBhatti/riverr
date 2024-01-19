@@ -2,7 +2,11 @@
 /public/build
 /public/hot
 /public/storage
+/public/css/
+/public/js/
 /storage/*.key
+/storage/framework/
+/bootstrap/cache/
 /vendor
 .env
 .env.backup
@@ -13,3 +17,4 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+public/mix-manifest.json
